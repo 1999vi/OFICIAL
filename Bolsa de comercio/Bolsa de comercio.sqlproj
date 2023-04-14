@@ -11,7 +11,6 @@
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>
   <ItemGroup>
-    <Folder Include="Script1\BOLSCO\SQL\" />
     <Folder Include="Script1\BOLSCO\TOS\" />
     <Folder Include="Script1\BOLSCO\DOC\" />
   </ItemGroup>
