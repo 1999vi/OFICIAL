@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.7-preview" />
+  <PropertyGroup>
+    <Name>Bolsa de comercio</Name>
+    <ProjectGuid>{278EA10C-1BF3-4D01-96E0-0F1A380F6791}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+  <ItemGroup>
+    <Folder Include="Script1\BOLSCO\SQL\" />
+    <Folder Include="Script1\BOLSCO\TOS\" />
+    <Folder Include="Script1\BOLSCO\DOC\" />
+  </ItemGroup>
+</Project>
